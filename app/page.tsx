@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 export default function Dashboard() {
-  const [hubspotData, setHubspotData] = useState(null);
+  const [hubspotData, setHubspotData] = useState<any>(null);
   const [xeroData, setXeroData] = useState<any>(null);
-  const [aiSummary, setAiSummary] = useState(null);
+  const [aiSummary, setAiSummary] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   
   // State untuk Chatbox
