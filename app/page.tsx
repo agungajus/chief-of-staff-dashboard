@@ -52,7 +52,7 @@ export default function Dashboard() {
   };
 
   // Fungsi Kirim Chat ke AI
-  const askAI = async (e) => {
+  const askAI = async (e: any) => {
     e.preventDefault();
     if (!chatInput) return;
     setChatLoading(true);
@@ -67,7 +67,7 @@ export default function Dashboard() {
   };
 
   // Persiapan Data Chart
-  const chartData = hubspotData?.map(deal => ({
+  const chartData = hubspotData?.map((deal: any) => ({
     name: deal.properties.dealname,
     amount: Number(deal.properties.amount) || 0
   })) || [];
@@ -108,7 +108,7 @@ export default function Dashboard() {
                 <div className="bg-gray-900 p-4 rounded-lg border border-gray-700 col-span-2 sm:col-span-1">
                   <p className="text-sm text-gray-400">Priority Alerts</p>
                   <ul className="list-disc list-inside text-red-400 text-sm mt-1">
-                    {aiSummary.priorityAlerts?.map((a, i) => <li key={i}>{a}</li>)}
+                    {aiSummary.priorityAlerts?.map((a: any, i: number) => <li key={i}>{a}</li>)}
                   </ul>
                 </div>
                 <div className="bg-gray-900 p-4 rounded-lg border border-gray-700 col-span-2">
