@@ -4,7 +4,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recha
 
 export default function Dashboard() {
   const [hubspotData, setHubspotData] = useState(null);
-  const [xeroData, setXeroData] = useState(null);
+  const [xeroData, setXeroData] = useState<any>(null);
   const [aiSummary, setAiSummary] = useState(null);
   const [loading, setLoading] = useState(false);
   
