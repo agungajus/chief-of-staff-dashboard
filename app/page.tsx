@@ -103,7 +103,7 @@ export default function Dashboard() {
           {/* Greeting Card */}
           <div className="bg-[#1C1C1E] rounded-2xl p-6 border border-neutral-800 flex justify-between items-center">
             <div>
-              <h2 className="text-2xl font-semibold tracking-tight text-white">Good morning, Mark</h2>
+              <h2 className="text-2xl font-semibold tracking-tight text-white">Good morning, Thom</h2>
               <p className="text-neutral-400 text-sm mt-1">{today} • AI briefing ready</p>
             </div>
             <div className="w-12 h-12 rounded-full bg-blue-900 flex items-center justify-center text-blue-300 font-bold text-lg hidden md:flex">MR</div>
